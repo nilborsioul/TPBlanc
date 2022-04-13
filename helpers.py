@@ -1,8 +1,8 @@
 def hello():
     """
     >>> hello()
-    'Hello la famille !'
+    'Hello develop!'
 
     """
 
-    return "Hello la famille !"
+    return "Hello develop!"
