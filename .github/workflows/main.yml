@@ -54,7 +54,6 @@ jobs:
           pip install pytest-cov
           python3 -m pytest --doctest-modules --ignore=main.py --cov
 
-
   deploy:
     needs: test
     runs-on: ubuntu-latest
