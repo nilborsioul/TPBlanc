@@ -54,12 +54,6 @@ jobs:
           pip install pytest-cov
           python3 -m pytest --doctest-modules --ignore=main.py --cov
 
-      # Runs a set of commands using the runners shell
-      - name: echoval
-        run: |
-          echo $github.ref_name
-
-
   deploy:
     needs: test
     runs-on: ubuntu-latest
