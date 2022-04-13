@@ -57,7 +57,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: ${{github.base_ref == 'main'}}
+    if: ${{ github.ref == 'refs/heads/main'  }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -71,7 +71,7 @@ jobs:
   deploy-develop:
     needs: test
     runs-on: ubuntu-latest
-    if: ${{github.ref_name == 'develop'}}
+    if: ${{ github.ref == 'refs/heads/develop'  }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
